@@ -266,7 +266,7 @@ Suites.push({
     url: 'todomvc/ddom/index.html',
     version: '1',
     prepare: function (runner, contentWindow, contentDocument) {
-        return runner.waitForElement('.todoapp').then(function (element) {
+        return runner.waitForElement('.new-todo').then(function (element) {
             element.focus();
             return element;
         });
