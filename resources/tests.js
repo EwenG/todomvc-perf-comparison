@@ -283,7 +283,7 @@ Suites.push({
                 keydownEvent.initEvent('keydown', true, true);
                 keydownEvent.keyCode = 13; // VK_ENTER
                 newTodo.dispatchEvent(keydownEvent);
-                newTodo = document.querySelector('.new-todo');
+                newTodo = contentDocument.querySelector('.new-todo');
                 newTodo.focus();
             }
         }),
