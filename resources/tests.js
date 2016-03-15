@@ -283,6 +283,7 @@ Suites.push({
                 keydownEvent.initEvent('keydown', true, true);
                 keydownEvent.keyCode = 13; // VK_ENTER
                 newTodo.dispatchEvent(keydownEvent);
+                newTodo.focus();
             }
         }),
         new BenchmarkTestStep('CompletingAllItems', function (newTodo, contentWindow, contentDocument) {
