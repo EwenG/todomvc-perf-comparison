@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="base.css" rel="stylesheet" type="text/css">
+        <link href="index.css" rel="stylesheet" type="text/css">
+        <script src="javascript/main.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <section class="todoapp">
+            <header class="header">
+                <h1>todos</h1>
+                <input autofocus class="new-todo" data-ddom-event="#ddom/h[keydown todo_ddom.view header_keydown]#ddom/h[blur todo_ddom.view save_header]" placeholder="What needs to be done?" type="text" />
+            </header>
+            <section class="main"></section>
+            <footer class="footer"></footer>
+        </section>
+        <script type="text/javascript">todo_ddom.view.init.call(null);</script>
+    </body>
+</html>
